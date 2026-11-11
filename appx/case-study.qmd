@@ -2,4 +2,6 @@
 title: "Case Study"
 ---
 
-Your case study go here.
+Pockets Case Study - https://pudding.cool/2018/08/pockets/
+
+The study is interactive as you scroll. It has lots of animated graphs with iterations that update as you continue to scroll and learn more information. This improves the data visualizations. Color is also used to highlight specific details and draw the readers eye. There is a nice hook at the start of the story that draws the readers in. There is a good balance of visualizations and written paragraphs that keeps the reader intrigued. Reference data is included. There are lots of interactive buttons and features that allow the reader to learn more specific information that is relative to them. There are headings that are structured as questions to draw the reader in. Overall, the story is very well structured and has lots of small feature details that enhance the experience for the reader.

@@ -2,4 +2,46 @@
 title: "Proposal"
 ---
 
-Your proposal go here.
+Ordway Aqua Quality vs Weather
+by Eliza, Sophia, Shaylee
+
+This project explores the relationship between weather conditions and water quality at Ordway using environmental data collected from 2009–2013. We will investigate how factors such as temperature, rainfall, wind, and sunlight relate to water quality measurements, including dissolved oxygen, turbidity, pH, and water temperature. Through data analysis and visualization, we aim to identify patterns and better understand the connections between weather and aquatic conditions.
+
+Questions:
+We are interested in the following questions:
+- How are air temperature and sunlight related to water temperature?
+- Does rainfall relate to changes in water turbidity and water level?
+- How are water temperature and sunlight related to dissolved oxygen levels?
+
+Motivation: 
+We chose this topic because we are interested in understanding how weather affects aquatic environments. Weather data and water-quality measurements allow us to explore real-world environmental relationships using data science. We hope to identify patterns over time and better understand how changes in weather may be associated with changes in water quality. The Ordway Field Station is also a valuable asset to Macalester College (where we attend school), so we have a personal connection to the location where this data was collected. 
+
+Potential Dataset
+We plan to use the Ordway Weather Station and Water Quality Station dataset, which contains observations recorded every 30 minutes. Weather variables include air temperature, wind speed, humidity, rainfall, and sunlight. Water-quality variables include water temperature, pH, turbidity, dissolved oxygen, conductivity, and water level. (https://digitalcommons.macalester.edu/ordweatherdata/)
+
+We will investigate the dataset's date range, missing values, and consistency between the two stations before conducting our analysis.
+
+Communication Plan
+- Primary communication channel: [Group chat - text]
+- Expected response time: Within 24 hours on weekdays.
+- Meetings: [Wednesday afternoons]
+Updates: Each team member will communicate progress, questions, and potential delays in the group chat.
+
+Team Roles
+Everyone will contribute to data cleaning, analysis, visualization, and the final report. We will also assign the following leads:
+- Point of contact: [Eliza] — communicates with the instructor and preceptors.
+- Technical lead: [Sophia] — oversees the codebase, GitHub repository, and project website.
+- Style lead: [Shaylee] — checks that the code follows the course Code Styling Guide.
+These roles help organize the project, but all team members are expected to contribute throughout the process.
+
+Conflict Resolution
+If a team member expects to miss a deadline, they should notify the group as early as possible so tasks can be adjusted. The team will work together to redistribute work when needed. If we disagree on a decision, we will discuss the options and choose the approach that best supports our research questions and project goals. If we cannot reach an agreement, we will ask the instructor or a preceptor for guidance.
+
+Rough Implementation Plan
+We will break up the project into steps for each task, assign team members, and set deadlines based on the course deliverables.
+Dataset exploration: Inspect the data, check missing values, and confirm the time range.
+Data cleaning: Prepare the weather and water-quality variables for analysis.
+Exploratory analysis: Create initial plots and summaries to investigate our research questions.
+Analysis and visualization: Develop the most useful comparisons and refine our findings.
+Website and report: Build the Quarto website, explain our methods and results, and discuss limitations.
+Final review and presentation: Check code styling, reproducibility, visualizations, and the final project before submission.
