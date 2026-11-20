@@ -2,4 +2,41 @@
 title: "Eliza P"
 ---
 
-Your exploratory data analysis of the team datasets go here.
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+ordway_weather <- read.csv("../data/raw/OrdwayWeatherandWaterData2013.csv")
+```
+
+arsenal Package
+
+```{r}
+library(arsenal)
+```
+
+```{r}
+ordway_weather %>%
+  tableby( ~ ., data = .) %>%
+  summary()
+```
+
+DataExplorer Package
+
+```{r}
+library(DataExplorer)
+```
+
+```{r}
+introduce(ordway_weather)
+```
+
+gtsummary Package
+
+```{r}
+library(gtsummary)
+```
+
+
