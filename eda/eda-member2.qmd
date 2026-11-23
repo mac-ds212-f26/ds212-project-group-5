@@ -3,3 +3,66 @@ title: "Member 2 Shaylee O'Grady"
 ---
 
 Your exploratory data analysis of the team datasets go here.
+
+```{r}
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+```
+
+
+```{r}
+ordway <- read.csv('/Users/shayleeogrady/Documents/macalester/fall 2026/data sci/ds212-project-group-5/data/raw/OrdwayWeatherandWaterData2013.csv')
+
+names(ordway) <- as.character(unlist(ordway[1, ]))
+
+ordway <- ordway[-1, ]
+```
+
+```{r}
+names(ordway)
+
+head(ordway)
+```
+
+```{r}
+dim(ordway)
+```
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+
+glimpse(ordway)
+
+summary(ordway)
+```
+```{r}
+class(ordway$`Date/Time`)
+
+head(ordway$`Date/Time`)
+```
+
+```{r}
+colSums(is.na(ordway))
+```
+```{r}
+ordway$`Date/Time` <- as.POSIXct(
+  as.character(ordway$`Date/Time`),
+  format = "%m/%d/%y %H:%M"
+)
+
+ordway$PAR <- as.numeric(ordway$PAR)
+
+ggplot(ordway, aes(x = `Date/Time`, y = PAR)) +
+  geom_line() +
+  labs(
+    title = "Photosynthetically Active Radiation Over Time",
+    x = "Date",
+    y = "PAR (umol/s/m²)"
+  ) +
+  theme_minimal()
+```
+
+
+
