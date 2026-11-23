@@ -115,4 +115,8 @@ weather_2013 <- weather_messy |>
 write_csv(weather_2013, "weather.csv")
 ```
 
+```{r}
+weather <- read.csv('/Users/shayleeogrady/Documents/macalester/fall 2026/data sci/ds212-project-group-5/data/processed/weather.csv')
+```
+
 
