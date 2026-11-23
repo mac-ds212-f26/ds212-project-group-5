@@ -1,10 +1,23 @@
 ---
-title: "Report"
+title: "Ordway Weather"
 ---
 
-Your report goes here.
+*Motivation*
+
+As college students in Minnesota, we are experiencing first hand the impacts of climate change.
+This year has already broken records in the latest first snowfall, and there have been insanely warm temperatures this fall.
+This brings us to our interest in the connections between weather and water quality in Minnesota, specifically looking at the Ordway Field Station, an area special to many in the Macalester community.
+
+*Research Questions*
+
+Our research questions for this project are the following:
+
+- How does air temperature relate to water temperature?
+
+- How does rainfall impact water turbidity?
+
+- How does water level in the Mississippi River differ from that in River Lake?
 
 ```{r}
 # a test code chunk
 ```
-

@@ -12,6 +12,7 @@ library(knitr)
 
 
 ```{r}
+#| eval: false
 ordway <- read.csv('/Users/shayleeogrady/Documents/macalester/fall 2026/data sci/ds212-project-group-5/data/raw/OrdwayWeatherandWaterData2013.csv')
 
 names(ordway) <- as.character(unlist(ordway[1, ]))
@@ -19,17 +20,17 @@ names(ordway) <- as.character(unlist(ordway[1, ]))
 ordway <- ordway[-1, ]
 ```
 
-```{r}
+```{r, eval = FALSE}
 names(ordway)
 
 head(ordway)
 ```
 
-```{r}
+```{r, eval = FALSE}
 dim(ordway)
 ```
 
-```{r}
+```{r, eval = FALSE}
 library(tidyverse)
 library(ggplot2)
 
@@ -37,16 +38,18 @@ glimpse(ordway)
 
 summary(ordway)
 ```
-```{r}
+
+```{r, eval = FALSE}
 class(ordway$`Date/Time`)
 
 head(ordway$`Date/Time`)
 ```
 
-```{r}
+```{r, eval = FALSE}
 colSums(is.na(ordway))
 ```
-```{r}
+
+```{r, eval = FALSE}
 ordway$`Date/Time` <- as.POSIXct(
   as.character(ordway$`Date/Time`),
   format = "%m/%d/%y %H:%M"

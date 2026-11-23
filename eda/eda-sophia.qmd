@@ -2,17 +2,17 @@
 title: "Sophia S"
 ---
 
-```{r}
+```{r, eval = FALSE}
 library(tidyverse)
 library(janitor)
 library(DataExplorer)
 ```
 
-```{r}
+```{r, eval = FALSE}
 ordway_all <- read_csv("../data/raw/Ordway_weather_water_data_2009_2016.csv")
 ```
 
-```{r}
+```{r, eval = FALSE}
 # preliminary cleaning
 ordway_all <- clean_names(ordway_all)
 
@@ -26,7 +26,7 @@ ordway_all <- ordway_all |>
 
 ```
 
-```{r}
+```{r, eval = FALSE}
 # get basic info
 introduce(ordway_all)
 
@@ -35,7 +35,7 @@ plot_intro(ordway_all)
 
 There are a significant amount of missing observations; however, no columns are fully missing. About 70% of the variables are continous, and about 30% are discrete. Including the "Notes" variable likely makes it that there are no complete rows, as seen below. It seems reasonable to drop it in the cleaned dataset.
 
-```{r}
+```{r, eval = FALSE}
 # look into missing data
 plot_missing(ordway_all)
 profile_missing(ordway_all)
@@ -44,7 +44,7 @@ profile_missing(ordway_all)
 There is no missing date-related data. Over half of the observations have missing data for water station variables, so we may need to use only a subset of our data when we consider water quality data. There is relatively little missing data for the weather variables, but avag rain duration and avg max windspeed have a higher percentage of missing variables.
 
 
-```{r}
+```{r, eval = FALSE}
 # investigate missing variables (plot counts)
 # plots number of observations by year, by month, by am and pm
 ```
