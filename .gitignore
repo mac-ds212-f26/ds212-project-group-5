@@ -70,3 +70,4 @@ _freeze/
 *.log
 *.aux
 *.toc
+data/raw/OrdwayWeatherandWaterData2013.csv
