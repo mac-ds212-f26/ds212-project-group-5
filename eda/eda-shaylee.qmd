@@ -87,5 +87,32 @@ ggplot(ordway, aes(x = `Date/Time`, y = PAR)) +
 #   theme_minimal()
 ```
 
+```{r}
+weather_messy <- read.csv('/Users/shayleeogrady/Documents/macalester/fall 2026/data sci/ds212-project-group-5/data/raw/DNRWeatherData.csv')
+```
+
+```{r}
+library(tidyverse)
+
+weather_2013 <- weather_messy |>
+  rename(
+    max_temp_f    = Maximum.Temperature.degrees..F.,
+    min_temp_f    = Minimum.Temperature.degrees..F.,
+    precip_in     = Precipitation..inches.,
+    snow_in       = Snow..inches.,
+    snow_depth_in = Snow.Depth..inches.
+  ) |>
+  mutate(Date = as.Date(Date)) |>
+  filter(year(Date) == 2013) |>
+  # "T" = trace amount -> 0; blanks -> NA; then make numeric
+  mutate(across(c(precip_in, snow_in, snow_depth_in),
+                ~ as.character(.x) |>
+                  na_if("") |>
+                  na_if("T") |>   # temporary, replaced below
+                  as.numeric() |>
+                  coalesce(if_else(as.character(.x) == "T", 0, NA_real_))))
+
+write_csv(weather_2013, "weather.csv")
+```
 
 
